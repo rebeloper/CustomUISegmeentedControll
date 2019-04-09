@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5038995B688548247D8F28 /* Pods_CustomUISegmeentedControll.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5BB0C5DAC3564530EA4EC5 /* Pods_CustomUISegmeentedControll.framework */; };
 		C90C42B5225CF95E00D98331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C42B4225CF95E00D98331 /* AppDelegate.swift */; };
 		C90C42B7225CF95E00D98331 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C42B6225CF95E00D98331 /* RootViewController.swift */; };
 		C90C42B9225CF95F00D98331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90C42B8225CF95F00D98331 /* Assets.xcassets */; };
@@ -14,12 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C92D5E7F1541F661A413F85 /* Pods-CustomUISegmeentedControll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUISegmeentedControll.release.xcconfig"; path = "Target Support Files/Pods-CustomUISegmeentedControll/Pods-CustomUISegmeentedControll.release.xcconfig"; sourceTree = "<group>"; };
+		C85B9D6DE1DD2C8C1A9D1F74 /* Pods-CustomUISegmeentedControll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomUISegmeentedControll.debug.xcconfig"; path = "Target Support Files/Pods-CustomUISegmeentedControll/Pods-CustomUISegmeentedControll.debug.xcconfig"; sourceTree = "<group>"; };
 		C90C42B1225CF95E00D98331 /* CustomUISegmeentedControll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUISegmeentedControll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90C42B4225CF95E00D98331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90C42B6225CF95E00D98331 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C90C42B8225CF95F00D98331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90C42BB225CF95F00D98331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90C42BD225CF95F00D98331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED5BB0C5DAC3564530EA4EC5 /* Pods_CustomUISegmeentedControll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomUISegmeentedControll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5038995B688548247D8F28 /* Pods_CustomUISegmeentedControll.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162AC10746AEA7350BF5ED76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED5BB0C5DAC3564530EA4EC5 /* Pods_CustomUISegmeentedControll.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C90C42A8225CF95E00D98331 = {
 			isa = PBXGroup;
 			children = (
 				C90C42B3225CF95E00D98331 /* CustomUISegmeentedControll */,
 				C90C42B2225CF95E00D98331 /* Products */,
+				DDF58CD62680345E6314866E /* Pods */,
+				162AC10746AEA7350BF5ED76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +76,16 @@
 			path = CustomUISegmeentedControll;
 			sourceTree = "<group>";
 		};
+		DDF58CD62680345E6314866E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85B9D6DE1DD2C8C1A9D1F74 /* Pods-CustomUISegmeentedControll.debug.xcconfig */,
+				8C92D5E7F1541F661A413F85 /* Pods-CustomUISegmeentedControll.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90C42C0225CF95F00D98331 /* Build configuration list for PBXNativeTarget "CustomUISegmeentedControll" */;
 			buildPhases = (
+				F4B289B6008C55ADBC177780 /* [CP] Check Pods Manifest.lock */,
 				C90C42AD225CF95E00D98331 /* Sources */,
 				C90C42AE225CF95E00D98331 /* Frameworks */,
 				C90C42AF225CF95E00D98331 /* Resources */,
+				ABA9FEC2B111B6945970C6A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABA9FEC2B111B6945970C6A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomUISegmeentedControll/Pods-CustomUISegmeentedControll-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomUISegmeentedControll/Pods-CustomUISegmeentedControll-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4B289B6008C55ADBC177780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomUISegmeentedControll-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C90C42AD225CF95E00D98331 /* Sources */ = {
@@ -268,6 +342,7 @@
 		};
 		C90C42C1225CF95F00D98331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85B9D6DE1DD2C8C1A9D1F74 /* Pods-CustomUISegmeentedControll.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +361,7 @@
 		};
 		C90C42C2225CF95F00D98331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C92D5E7F1541F661A413F85 /* Pods-CustomUISegmeentedControll.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

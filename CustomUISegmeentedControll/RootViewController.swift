@@ -20,6 +20,8 @@ class RootViewController: UIViewController {
         control.layer.masksToBounds = true
         control.layer.borderColor = UIColor.white.cgColor
         control.tintColor = UIColor.white
+        control.backgroundColor = UIColor.black
+        control.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 16)], for: .normal)
         control.addTarget(self, action: #selector(handleSegmentedControlValueChanged(_:)), for: .valueChanged)
         return control
     }()
